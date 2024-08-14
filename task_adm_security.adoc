@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: task_adm_security.html 
+keywords: administer, administering, web, security 
+summary: Há várias tarefas relacionadas que você pode executar como parte da proteção de uma implantação do ONTAP Select. 
+---
+= Segurança
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Há várias tarefas relacionadas que você pode executar como parte da proteção de uma implantação do ONTAP Select.
+
+
+
+== Altere a senha do administrador de implantação
+
+Você pode alterar a senha da conta de administrador de máquina virtual implantar conforme necessário usando a interface de usuário da Web.
+
+.Passos
+. Inicie sessão na interface de utilizador da Web do utilitário de implementação utilizando a conta de administrador.
+. Clique no ícone de figura no canto superior direito da página e selecione *alterar senha*.
+. Forneça a senha atual e nova conforme solicitado e clique em *Enviar*.
+
+
+
+
+== Adicione uma conta de servidor de gerenciamento
+
+Você pode adicionar uma conta de servidor de gerenciamento ao banco de dados de armazenamento de credenciais de implantação.
+
+.Antes de começar
+Você deve estar familiarizado com os tipos de credenciais e como elas são usadas pelo ONTAP Select Deploy.
+
+.Passos
+. Inicie sessão na interface de utilizador da Web do utilitário de implementação utilizando a conta de administrador.
+. Clique na guia *Administration* na parte superior da página.
+. Clique em *Management Servers* e clique em *Add vCenter*.
+. Insira as informações a seguir e clique em *Add*.
++
+[cols="30,70"]
+|===
+| Neste campo... | Faça o seguinte: 
+
+
+| Nome/endereço IP | Forneça o nome de domínio ou o endereço IP do servidor vCenter. 
+
+
+| Nome de utilizador | Insira o nome de usuário da conta para acessar o vCenter. 
+
+
+| Palavra-passe | Introduza a palavra-passe para o nome de utilizador associado. 
+|===
+. Você pode, opcionalmente, Registrar (instalar) o plug-in Deploy vCenter.
+. Depois que o novo servidor de gerenciamento é adicionado, você pode opcionalmente clicar image:icon_kebab.gif["Opções"] e selecionar uma das seguintes opções:
++
+** Atualizar credenciais
+** Registe-se como plug-in
+** Verifique as credenciais
+** Remova o servidor de gerenciamento
+
+
+
